@@ -39,7 +39,6 @@ ___
 
 * 进入账号后，从[这里](https://github.com/new)新建一个自己的repo，记住命名格式**必须**为：[github-username].github.io。
 * 将创建的repo clone到本地：
-
  ```
  $ git clone https://github.com/tobiasalin/tobiasalin.github.io
  ```
