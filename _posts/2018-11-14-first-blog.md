@@ -18,7 +18,7 @@ tags:
 <p id = "pre" ></p>
 ___
 
-##正文
+## 正文
 
 搭建过程其实并不算太复杂，但是由于github.io偏DIY的技术向，还是遇到了一些问题，稍作记录。
 
@@ -31,10 +31,9 @@ ___
 * 利用 GitHub Pages 的域名和免费无限空间，不用自己折腾服务器
 * [Jekyll](https://github.com/jekyll/jekyll) 的高度定制化
 
--
+--
 
-
-####1. 创建一个repo
+#### 1. 创建一个repo
 * 首先申请一个[GitHub](https://github.com/)账号并登录，github.io完全是基于github实现，github pages的介绍点[这里](https://pages.github.com/)。
 
 * 进入账号后，从[这里](https://github.com/new)新建一个自己的repo，记住命名格式**必须**为：[github-username].github.io。
@@ -42,7 +41,7 @@ ___
 
  `$ git clone https://github.com/tobiasalin/tobiasalin.github.io`
 
-####2. 编写简单的首页
+#### 2. 编写简单的首页
 ```
 $ cd tobiasalin.github.io
 $ echo "Hello World!" > index.html
@@ -53,7 +52,7 @@ $ git push origin master
 
 执行完毕，打开博客首页`https://<github-username>.github.io`，不出意外的话就可以看到属于你自己的Hello World博文了，出了意外刷新治百病。
 
-####3. 选择Jekyll主题
+#### 3. 选择Jekyll主题
 此部分**前端**技巧较多，前期可以先fork一个现成的国人开发的主题，毕竟 [Jekyll](https://github.com/jekyll/jekyll) 已经吃下了3w+的star，拥有很成熟的社区，重复造轮子很累且不值得。
 
 `$ git clone git@github.com:Huxpro/huxblog-boilerplate.git`
@@ -62,7 +61,7 @@ clone该repo后，直接将内容copy至自己的repo下，覆盖掉自己repo�
 
 **Note：**这里注意下，需要将_config.yml这个文件内容修改成自己想要展示的内容，否则会有一定的麻烦，后面需要从代码里面找，相当麻烦。
 
-####4. 使用git命令发布blog
+#### 4. 使用git命令发布blog
 Jekyll对于blog的位置以及文件命名有严格的[规定](https://jekyllrb.com/docs/posts/#creating-post-files)，亦即：blog的位置必须位于文件夹**_posts**下，命名必须为**YYYY-mm-dd-title-you-want.md**
 
 在_posts文件夹下编辑好blog后，使用以下命令提交blog：
@@ -74,7 +73,7 @@ $ git push origin master
 ```
 稍作等待，再访问自己的blog主页，即可看到提交的blog。
 
-####5. 本地预览blog
+#### 5. 本地预览blog
 如果只做了一个小小的改动就去push master显然是有点不合理的，这里介绍一下使用Jekyll构建本地网站预览的方法：
 
 * 安装Ruby( [What is Ruby?](https://www.ruby-lang.org/en/) )，可以参照[官网教程](https://www.ruby-lang.org/en/downloads/)。如果你是Mac，那么：
@@ -92,7 +91,7 @@ $ git push origin master
 	```
 
 完成以上步骤后，Jekyll会监听本地的`4000`端口（这里小概率会遇到pid冲突，通过系统命令查看Jekyll监听的端口号），打开`http://127.0.0.1:4000`就可以本地查看自己的博文效果了。
-##写在后面
+## 写在后面
 搭建过程其实很快，但是如果想要自己去做出其他blog/酷炫的一些效果来，还是需要在前端技巧上进行深耕的。
 
 轮子造好，后面的路应该要好好走下去才是（figh...ting。
