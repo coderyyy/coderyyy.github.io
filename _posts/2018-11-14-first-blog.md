@@ -1,6 +1,7 @@
 ---
 layout:     post
-title:      "First blog"
+title:      "写在最前面"
+subtitle:   "Welcome to coderyyy's blog."
 date:       2018-11-14 14:00:00
 author:     "coderyyy"
 header-img: "img/post-bg-2015.jpg"
@@ -8,12 +9,12 @@ tags:
     - Other Life
 ---
 
-> Welcome to coderyyy's blog.
-
 ## 前言
 写一个自己的blog这件事一直断断续续了几年，一是期间各种客观因素导致没能成行，比如密码忘了/公司倒了/电脑毁了之类；二是比较懒，也没遇到比较好的轮子，各种三方的UI实在不忍直视/要么就是连code都无法插入（好吧其实就是懒。
 
 但是！现在都8102年了，没有一个blog怎么好意思在这个世界呼吸空气。
+
+这里先介绍一下这个blog的搭建过程，以及小部分技术实现。
 <p id = "pre" ></p>
 ___
 
