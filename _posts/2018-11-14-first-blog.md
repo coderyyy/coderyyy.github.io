@@ -21,8 +21,8 @@ ___
 ## 正文
 
 搭建过程其实并不算太复杂，但是由于github.io偏DIY的技术向，还是遇到了一些问题，稍作记录。
-
-之前就有被安利过 <p id = "pages"></p>[GitHub Pages](https://pages.github.com/) + [Jekyll](http://jekyllrb.com/) 的基于**github.io**的blog实现，一直没有去做，正好借这个机会拿过来吃一吃。
+<p id = "pages"></p>
+之前就有被安利过 [GitHub Pages](https://pages.github.com/) + [Jekyll](http://jekyllrb.com/) 的基于**github.io**的blog实现，一直没有去做，正好借这个机会拿过来吃一吃。
 
 稍作了解后不难发现，优点还是比较明显的：
 
