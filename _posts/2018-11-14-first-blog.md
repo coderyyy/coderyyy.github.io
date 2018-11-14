@@ -39,7 +39,9 @@ ___
 * 进入账号后，从[这里](https://github.com/new)新建一个自己的repo，记住命名格式**必须**为：[github-username].github.io。
 * 将创建的repo clone到本地：
 
- ```$ git clone https://github.com/tobiasalin/tobiasalin.github.io```
+ ```
+ $ git clone https://github.com/tobiasalin/tobiasalin.github.io
+ ```
 
 #### 2. 编写简单的首页
 ```
@@ -55,7 +57,9 @@ $ git push origin master
 #### 3. 选择Jekyll主题
 此部分**前端**技巧较多，前期可以先fork一个现成的国人开发的主题，毕竟 [Jekyll](https://github.com/jekyll/jekyll) 已经吃下了3w+的star，拥有很成熟的社区，重复造轮子很累且不值得。
 
-```$ git clone git@github.com:Huxpro/huxblog-boilerplate.git```
+```
+$ git clone git@github.com:Huxpro/huxblog-boilerplate.git
+```
 
 clone该repo后，直接将内容copy至自己的repo下，覆盖掉自己repo内容。
 
@@ -78,12 +82,16 @@ $ git push origin master
 
 * 安装Ruby( [What is Ruby?](https://www.ruby-lang.org/en/) )，可以参照[官网教程](https://www.ruby-lang.org/en/downloads/)。如果你是Mac，那么：
 	
-	```$ brew install ruby```
+	```
+	$ brew install ruby
+	```
 
 
 * 安装GitHub Pages (简介见[上文](#pages))，安装完成Ruby后执行：
  
-	```$ gem install github-pages```
+	```
+	$ gem install github-pages
+	```
 	
 	
 * 开启Jekyll本地服务：
