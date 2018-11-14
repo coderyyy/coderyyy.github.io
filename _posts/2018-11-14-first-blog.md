@@ -16,12 +16,13 @@ tags:
 
 这里先介绍一下这个blog的搭建过程，以及小部分技术实现。
 <p id = "pre" ></p>
+<p id = "pages"></p>
 ___
 
 ## 正文
 
 搭建过程其实并不算太复杂，但是由于github.io偏DIY的技术向，还是遇到了一些问题，稍作记录。
-<p id = "pages"></p>
+
 之前就有被安利过 [GitHub Pages](https://pages.github.com/) + [Jekyll](http://jekyllrb.com/) 的基于**github.io**的blog实现，一直没有去做，正好借这个机会拿过来吃一吃。
 
 稍作了解后不难发现，优点还是比较明显的：
