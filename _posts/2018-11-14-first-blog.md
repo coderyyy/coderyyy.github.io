@@ -31,7 +31,7 @@ ___
 * 利用 GitHub Pages 的域名和免费无限空间，不用自己折腾服务器
 * [Jekyll](https://github.com/jekyll/jekyll) 的高度定制化
 
---
+---
 
 #### 1. 创建一个repo
 * 首先申请一个[GitHub](https://github.com/)账号并登录，github.io完全是基于github实现，github pages的介绍点[这里](https://pages.github.com/)。
@@ -80,9 +80,12 @@ $ git push origin master
 	
 	```$ brew install ruby```
 
-* 安装GitHub Pages (简介见[上文](#pages))，安装完成Ruby后执行： 
-	
+
+* 安装GitHub Pages (简介见[上文](#pages))，安装完成Ruby后执行：
+ 
 	```$ gem install github-pages```
+	
+	
 * 开启Jekyll本地服务：
 	
 	```
