@@ -8,4 +8,4 @@ tags:
     - Other
 ---
 
-> 
+> Let's do something useful.
