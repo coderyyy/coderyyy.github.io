@@ -23,7 +23,8 @@ tags:
 作为一个Android Developer，熟练使用Android系统API是必不可少的（Application），但是在进阶的道路上，揭开API的『面具』，直面API背后的Android FW/Linux Kernel同样是一条必经之路。
 
 今天就介绍一下，如何在Mac OSX上进行Android系统源代码的编译。
-___
+
+---
 
 ## 正文
 [AOSP](https://android.googlesource.com/) 是Google领导的Android系统开源项目，旨在为开发者创建定制的Android堆栈版本提供源代码以及相关信息。AOSP的相关简介可以在[这里](https://source.android.com/source/index.html)查看。
@@ -38,7 +39,7 @@ AOSP项目使用git进行版本控制，mac默认的磁盘对大小写是非敏�
 	```
 	hdiutil create -type SPARSE -fs 'Case-sensitive Journaled HFS+' -size 40g ~/	android.dmg
 	```
-执行完成后，会在用户根目录(命令行cd ~)创建出一个未挂载的磁盘映像android.dmg（也可能是android.dmg.sparseimage）
+执行完成后，会在用户根目录(命令行cd ~)创建出一个未挂载的磁盘映像android.dmg（也可能是android.dmg.sparseimage）  
 
 * **调整磁盘大小：**  
 创建完成后，可对磁盘空间的大小进行调整
@@ -59,23 +60,23 @@ AOSP项目使用git进行版本控制，mac默认的磁盘对大小写是非敏�
 * 对于master分支或者6.0+的版本，安装[最新的JDK版本](https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html#jdk-8u45-oth-JPR)
 
 #### 3. 安装Xcode
-* 从App store下载xcode安装，完成后需要
-  
-```
-$ xcode-select --install
-```
+* 从App store下载xcode安装，完成后需要  
 
-**Note：**这里最好再运行一下  
+	```
+	$ xcode-select --install
+	```
 
-```
-sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
-``` 
+	**Note：**这里最好再运行一下  
+	
+	```
+	sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
+	``` 
  
-以防后面的步骤出现warning： 
- 
-```
-Warning: Xcode appears to be installed but xcodebuild is unusable; some ports will likely fail to build.
-```
+	以防后面的步骤出现warning：  
+	
+	```
+	Warning: Xcode appears to be installed but xcodebuild is unusable; some ports will likely fail to build.
+	```
 
 #### 4. 安装MacPorts
 * 根据自己的系统来选择 [MacPorts的下载地址](https://www.macports.org/install.php)  
