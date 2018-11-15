@@ -60,7 +60,7 @@ AOSP项目使用git进行版本控制，mac默认的磁盘对大小写是非敏�
 * 对于master分支或者6.0+的版本，安装[最新的JDK版本](https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html#jdk-8u45-oth-JPR)
 
 #### 3. 安装Xcode
-* 从App store下载xcode安装，完成后需要  
+* **从App store下载xcode安装，完成后执行**  
 
 	```
 	$ xcode-select --install
@@ -79,24 +79,23 @@ AOSP项目使用git进行版本控制，mac默认的磁盘对大小写是非敏�
 	```
 
 #### 4. 安装MacPorts
-* 根据自己的系统来选择 [MacPorts的下载地址](https://www.macports.org/install.php)  
+* **根据自己的系统来选择 [MacPorts的下载地址](https://www.macports.org/install.php)**  
   
-* 编辑.bash_profile文件（如果没有此文件，vi会自动创建）
+* **编辑.bash_profile文件（如果没有此文件，vi会自动创建）**
   
 	```
 	vi ~/.bash_profile
 	```
 
-* 复制`export PATH=/opt/local/bin:$PATH`到.bash_profile文件中。
+* **复制`export PATH=/opt/local/bin:$PATH`到.bash_profile文件中。**
 
-* 激活MacPorts命令：
-  
+* **激活MacPorts命令：**  
+
 	```
 	source ~/.bash_profile
 	```
 
 #### 5. 通过MacPorts安装Make、Git、GPG
-
 ```
 POSIXLY_CORRECT=1 sudo port install gmake libsdl git gnupg
 ```  
@@ -110,7 +109,7 @@ ulimit -S -n 1024
 #### 6. 下载源代码
 可以参阅 [[官方教程]](https://source.android.com/setup/downloading)  
 
-* 确保主目录下有一个`bin/`目录，在.bash_profile中添加：  
+* **确保主目录下有一个`bin/`目录，在.bash_profile中添加：**  
    
    ```
    mkdir ~/bin
@@ -121,7 +120,7 @@ ulimit -S -n 1024
    ```
    source ~/.bash_profile
    ```
-* 下载repo  
+* **下载repo** 
 	  
 	```
 	curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
@@ -129,13 +128,13 @@ ulimit -S -n 1024
 	```
 	
 	关于repo的介绍，看[这里](https://source.android.com/setup/developing.html)。
-* 初始化repo  
+* **初始化repo**  
 	挂载的磁盘目录一般在/Volumes文件夹下，`cd /Volumes`进去后，找到挂载的磁盘名，cd进入磁盘目录后：
 	  
 	```
 	repo init -u https://android.googlesource.com/platform/manifest
 	```
-* 开始下载源码
+* **开始下载源码**
 	
 	```
 	repo sync
@@ -152,12 +151,12 @@ ulimit -S -n 1024
 #### 7. 编译
 编译过程在经历了多个Android版本之后变得更加简单明了。可以参考 [[官方教程]](https://source.android.com/source/initializing.html)
 
-* 设置环境
+* **设置环境**
 
 	```
 	source build/envsetup.sh
 	```
-* cd到源代码目录后：
+* **cd到源代码目录后：**
 	
 	```
 	make -j17
@@ -169,17 +168,17 @@ ulimit -S -n 1024
 #### 8. 在AndroidStudio中查看源码
 关于AndroidStuido的下载以及介绍，请移步 [Android Studio官方网站](https://developer.android.com/studio/)。
 
-* 编译完成后，cd到源代码目录，如`/Volumes/android/source`，执行：
+* **编译完成后，cd到源代码目录，如`/Volumes/android/source`，执行：**
 
 	```
 	mmm development/tools/idegen/
 	```
-* idegen完成后，执行：
+* **idegen完成后，执行：**
 
 	```
 	sh ./development/tools/idegen/idegen.sh
 	```
-* 以上两步完成以后，打开AndroidStudio -> File -> Open -> 源代码目录 -> android.ipr，即可在AndroidStuido中查看Android源代码。
+* **以上两步完成以后，打开AndroidStudio -> File -> Open -> 源代码目录 -> android.ipr，即可在AndroidStuido中查看Android源代码。**
 
 ## 写在后面
 网上其实有很多编译源码的教程，但是大多都是比较老旧的版本，亲测下来最新的master分支已经解决了很多遗留的编译问题。
